@@ -1,0 +1,13 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Result!</title>
+</head>
+<body>
+<form id="result" action="memory" method="post">
+  <input type="hidden" name="result" value="<%= @result%>">
+  <p>The <%= @operation %> of <%= @number1 %> and <%= @number2 %> is <%= @result %></p>
+  <button type="submit" name="savenumber">Save Result</button>
+</form>
+</body>
+</html>

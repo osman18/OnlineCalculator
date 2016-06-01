@@ -1,0 +1,21 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="add.css">
+  <title>Add | Online Calculator</title>
+</head>
+<body>
+  <h1>Add</h1>
+  <form id="mem" action="getMemory" method="post">
+    <button type="submit" name="button_memory">Retrieve number</button>
+  </form>
+  <form id="ope" action="operations" method="post">
+    <input type="text" name="number1" value="<%= @numberFromMemory%>" placeholder="0">
+    <input type="text" name="number2" placeholder="0">
+    <button type="submit" name="operation" value="addition">Add</button>
+    <button type="submit" name="operation" value="subtraction">Subtract</button>
+    <button type="submit" name="operation" value="multiplication">Multiplication</button>
+    <button type="submit" name="operation" value="divition">Divition</button>
+  </form>
+    <p><%= @result %></p>
+</body>
+</html>
