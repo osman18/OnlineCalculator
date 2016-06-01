@@ -1,5 +1,9 @@
-source "https://rubygems.org"
+source 'https://rubygems.org'
 
-gem "sinatra"
+gem 'rspec'
+gem 'rake'
+gem 'racc'
 
-ruby '2.2.4'
+platform :rbx do
+  gem 'rubysl'
+end

@@ -1,19 +1,8 @@
-class Calculator
-  def initialize(number1, number2,operation)
-    @number1 = number1
-    @number2 = number2
-    @operation = operation
-  end
+gem 'racc'
 
-  def operation
-  if @operation == "addition"
-    @number1 + @number2
-  elsif @operation == "subtraction"
-    @number1 - @number2
-  elsif @operation == "multiplication"
-      @number1 * @number2.round(3)
-  elsif @operation == "divition"
-    (@number1 / @number2).round(3)
-  end
-  end
-end
+require 'racc'
+require 'strscan'
+
+require_relative 'calculator/lexer'
+require_relative 'calculator/parser'
+require_relative 'calculator/evaluator'
